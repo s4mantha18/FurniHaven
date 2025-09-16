@@ -7,8 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 60px;
   font-family: "Montserrat", sans-serif;
+  flex-direction: column;
 }
 
 .header {
@@ -47,7 +48,7 @@ body {
   gap: 20px;
   font-size: 1rem;
   font-weight: 500;
-  color: black;
+  color: #230903;
 }
 
 nav {
@@ -91,7 +92,7 @@ button {
   background-color: inherit;
   cursor: pointer;
   font-size: 1rem;
-  color: black;
+  color: #230903;
 }
 
 button:hover {
@@ -102,5 +103,104 @@ button:hover {
 i {
   font-size: 1.5rem;
   cursor: pointer;
-  color: black;
+  color: #230903cc;
+}
+
+i:hover {
+  color: #230903;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #230903cc;
+  color: white;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-text button i {
+  color: white;
+}
+
+.hero-text button:hover {
+  background-color: #230903;
+}
+
+.hero-text p,
+.fa-couch {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #230903;
+  line-height: 1.5;
+  margin: 0;
+}
+
+bold {
+  font-weight: bold;
+}
+
+italic {
+  font-style: italic;
+}
+
+.image-grid {
+  width: 100%;
+  height: 650px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr;
+  gap: 20px;
+  margin-top: 40px;
+  /* background-color: red; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.image-grid div:nth-of-type(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.image-grid div:nth-of-type(2) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
