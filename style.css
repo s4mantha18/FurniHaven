@@ -30,7 +30,7 @@ body {
   gap: 3px;
 
   font-optical-sizing: auto;
-  font-style: italic;
+  font-style: em;
   font-weight: normal;
   justify-content: center;
   font-size: 0.7rem;
@@ -165,12 +165,12 @@ i:hover {
   margin: 0;
 }
 
-bold {
-  font-weight: bold;
+strong {
+  font-weight: strong;
 }
 
-italic {
-  font-style: italic;
+em {
+  font-style: em;
 }
 
 .image-grid {
@@ -336,7 +336,7 @@ italic {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  width: inherit;
+  max-width: 50%;
   height: auto;
   object-fit: contain; /* Prevents distortion */
   border-radius: 8px;
@@ -356,4 +356,5 @@ italic {
 .office {
   width: 20%;
   height: auto;
+  object-fit: contain;
 }
