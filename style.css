@@ -311,31 +311,49 @@ italic {
 }
 
 .category-grid div {
-  background-color: #d3b88cae;
+  background-color: #d3b88c75;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  min-height: 280px; /* Ensures enough space */
+  overflow: visible;
+  padding: 30px;
 }
 
 .category-grid div h6 {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 40px;
+  left: 40px;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 600;
-  color: #230903;
   z-index: 2;
+  letter-spacing: -2px;
 }
 
 .category-grid div img {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  width: 80px; /* Adjust size as needed */
+  width: inherit;
   height: auto;
+  object-fit: contain; /* Prevents distortion */
   border-radius: 8px;
   z-index: 1;
+}
+
+.category-grid div p {
+  color: #230903;
+  padding-top: 40px;
+  padding-left: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.office {
+  width: 20%;
+  height: auto;
 }
