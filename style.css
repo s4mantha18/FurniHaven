@@ -176,7 +176,7 @@ em {
 .image-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-auto-rows: 220px; /* base row height for consistency */
   gap: 10px;
   margin-top: 40px;
@@ -462,4 +462,15 @@ button {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.feautured-products p::before,
+.categories h1::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(to right, #111111, #2e2d2d, #fff);
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
 }
