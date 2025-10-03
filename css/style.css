@@ -82,7 +82,7 @@ a {
   outline: none;
   padding: 10px;
   border-radius: 20px;
-  width: 60px;
+  width: 160px;
   background-color: inherit;
 }
 
@@ -104,12 +104,6 @@ i {
   font-size: 1.5rem;
   cursor: pointer;
   color: #230903cc;
-}
-
-i:hover {
-  color: #230903;
-  transform: scale(1.1);
-  transition: 0.3s;
 }
 
 .hero {
@@ -410,25 +404,19 @@ em {
 }
 
 .product-name {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   margin-bottom: 5px;
   color: #230903;
+  font-weight: bold;
 }
 .price {
-  font-size: 0.6rem;
-  font-weight: bold;
-  padding: 0 10px 10px;
+  font-size: 0.9rem;
+
+  /* padding: 0 10px 10px; */
 }
 
-.quick-view {
-  color: #230903;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 .quick-view i {
   font-size: 0.8rem;
 }
@@ -442,4 +430,26 @@ em {
   background: linear-gradient(to right, #111111, #2e2d2d, #fff);
   margin: 0 auto 10px auto;
   border-radius: 10px;
+}
+
+.cart-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-container i {
+  font-size: 28px; /* make the cart a bit bigger */
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #67281a;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
 }
